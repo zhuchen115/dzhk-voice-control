@@ -1,0 +1,73 @@
+//This is a demostration file of Morris.js
+$(function(){
+    Morris.Line({
+        element: 'morris-bp',
+        data:[
+            {hr:'08:00',lbp:80,hbp:130},
+            {hr:'09:00',lbp:75,hbp:126},
+            {hr:'10:00',lbp:77,hbp:128},
+            {hr:'11:00',lbp:78,hbp:130},
+            {hr:'12:00',lbp:72,hbp:120},
+            {hr:'13:00',lbp:77,hbp:123},
+            {hr:'14:00',lbp:70,hbp:119},
+            {hr:'15:00',lbp:71,hbp:122},
+            {hr:'16:00',lbp:74,hbp:120},
+            {hr:'17:00',lbp:70,hbp:122},
+            {hr:'18:00',lbp:69,hbp:119},
+            {hr:'19:00',lbp:68,hbp:115},
+            {hr:'20:00',lbp:70,hbp:120},
+            {hr:'21:00',lbp:63,hbp:108},
+            {hr:'22:00',lbp:65,hbp:110},
+            {hr:'23:00',lbp:58,hbp:103},
+            {hr:'00:00',lbp:50,hbp:99},
+            {hr:'01:00',lbp:43,hbp:83},
+            {hr:'02:00',lbp:55,hbp:100},
+            {hr:'03:00',lbp:60,hbp:107},
+            {hr:'04:00',lbp:65,hbp:110},
+            {hr:'05:00',lbp:66,hbp:112},
+            {hr:'06:00',lbp:70,hbp:120},
+            {hr:'07:00',lbp:73,hbp:125}
+        ],
+        xkey:'hr',
+        parseTime:false,
+        ykeys:['hbp','lbp'],
+        ymin:40,
+        ymax:150,
+        labels:['High Pressure','Low Pressure']
+    });
+    Morris.Line({
+        element: 'morris-heartbeat',
+        data:[
+            {hr:'08:00',hb:80},
+            {hr:'09:00',hb:85},
+            {hr:'10:00',hb:90},
+            {hr:'11:00',hb:88},
+            {hr:'12:00',hb:78},
+            {hr:'13:00',hb:78},
+            {hr:'14:00',hb:80},
+            {hr:'15:00',hb:75},
+            {hr:'16:00',hb:77},
+            {hr:'17:00',hb:70},
+            {hr:'18:00',hb:77},
+            {hr:'19:00',hb:78},
+            {hr:'20:00',hb:69},
+            {hr:'21:00',hb:70},
+            {hr:'22:00',hb:70},
+            {hr:'23:00',hb:65},
+            {hr:'00:00',hb:52},
+            {hr:'01:00',hb:50},
+            {hr:'02:00',hb:48},
+            {hr:'03:00',hb:52},
+            {hr:'04:00',hb:60},
+            {hr:'05:00',hb:65},
+            {hr:'06:00',hb:70},
+            {hr:'07:00',hb:77}
+        ],
+        xkey:'hr',
+        parseTime:false,
+        ykeys:['hb'],
+        ymin:40,
+        ymax:100,
+        labels:['Heart Rate']
+    });
+});

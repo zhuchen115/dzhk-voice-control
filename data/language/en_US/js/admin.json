@@ -1,0 +1,11 @@
+{
+    "chpasswd": "Change Password",
+    "details": "View Details",
+    "error" : "Error",
+    "pwdmism": "Password Miss Match",
+    "passwdchanged": "Password Changed",
+    "emailchanged": "Email Address Changed",
+    "namechanged" : "Display Name have Changed",
+    "notfound": "No Result was found",
+    "groupchanged": "Group Changed"
+}
